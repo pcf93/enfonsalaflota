@@ -69,7 +69,7 @@ header {
     height: 50%;
 }
 
-.opcio-logo > img {
+.opcio-logo > a > img {
     width:100%;
 }
 
@@ -271,6 +271,139 @@ input {
     .opcio-logo > img {
         width:100%;
     }
+
+    /* Tauler col·locar vaixells */
+
+#home-screen {
+    position: relative;
+}
+
+.tauler-previ {
+    width: 40vw;
+    height: 40vw;
+    margin-left: 10%;
+    margin-top: 10%;
+}
+
+table {
+    width: 100%;
+    height: 100%;
+}
+
+td {
+    width: 8%;
+    height: 5%;
+    border: 1px solid black;
+    background-color: #3d85c6
+}
+
+td.ocupat {
+
+    background-color: #959595;
+}
+
+td.coordinate-cols {
+    width: 1%;
+    height: 5%;
+    text-align: center;
+    border: none;
+    background-color: #78aad7;
+}
+
+td.coordinate-rows {
+    width: 1px;
+    height: 5%;
+    text-align: center;
+    border: none;
+    background-color: #78aad7;
+}
+
+/* Contenidor vaixells */
+
+.contenidor-vaixells {
+    position: absolute;
+    top: 0px;
+    left: 50vw;
+    display: flex;
+    flex-wrap: wrap;
+    width: 40vw;
+    height: 40vw;
+    margin-left: 10%;
+
+}
+
+.fila-vaixells {
+    display: flex;
+    width: 100%;
+    height: 20%;
+}
+
+.vaixell-1-celda {
+    border: 1px solid black;
+    background-color: #959595;
+    width: 3vw;
+    height: 3vw;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+.vaixell-2-celdes {
+    border: 1px solid black;
+    background-color: #959595;
+    width: 6vw;
+    height: 3vw;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+.vaixell-3-celdes {
+    border: 1px solid black;
+    background-color: #959595;
+    width: 9vw;
+    height: 3vw;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+.vaixell-4-celdes {
+    border: 1px solid black;
+    background-color: #959595;
+    width: 12vw;
+    height: 3vw;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+/* Botons inici partida */
+
+.button-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.button-container > button {
+    width: 100%;
+    height: 3vh;
+    margin-top: 1vh;
+    border-radius: 2vh;
+    background-color: rgb(160, 22, 22);
+    color: white;
+    font-weight: bolder;
+}
+
+input {
+    width: 100%;
+    height: 3vh;
+    margin-top: 1vh;
+    border-radius: 2vh;
+    background-color: rgb(160, 22, 22);
+    color: white;
+    font-weight: bolder;
+}
 
 }
 
